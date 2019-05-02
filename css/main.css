@@ -1289,6 +1289,7 @@ pre .javascript .function {
 .post-body span.exturl .fa {
   font-size: 14px;
   margin-left: 4px;
+  color: #e33139 !important;
 }
 .post-body .fancybox img {
   display: block !important;
@@ -1880,7 +1881,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cf5b0d;
+  background: #88d0ff;
 }
 .feed-link,
 .chat {
