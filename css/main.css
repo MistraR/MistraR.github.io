@@ -1834,7 +1834,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2eff1a;
+  background: #fff106;
 }
 .feed-link,
 .chat {
@@ -2542,4 +2542,19 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+body {
+  background: url("https://markdown-mistra.oss-cn-shenzhen.aliyuncs.com/wallhaven-672626.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: right center;
+  background-size: 100%;
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  background-color: #d8d7d4;
 }
