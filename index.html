@@ -1,155 +1,774 @@
-
 <!DOCTYPE html>
-<html lang class="loading">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
 <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hexo</title>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google" content="notranslate">
-    <meta name="keywords" content="Fechin,"> 
-    
-    <meta name="author" content="John Doe"> 
-    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-    <link rel="stylesheet" href="/css/diaspora.css">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-8691406134231910",
-              enable_page_level_ads: true
-         });
-    </script>
-    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-    </script>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/32.jpg?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32.jpg?v=7.1.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/32.jpg?v=7.1.1">
+
+
+  <link rel="mask-icon" href="/images/32.jpg?v=7.1.1" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
-</html>
-<body class="loading">
-    <span id="config-title" style="display:none">Hexo</span>
-    <div id="loader"></div>
-    <div class="nav">
-    <ul id="menu-menu" class="menu">
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband">
+      <a href="https://github.com/MistraR" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    </div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
         
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/whoami/" title="Whoami" target="_blank" rel="noopener">Whoami</a>
-        </li>
         
-        <li class="  menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="https://github.com/Fechin" title="Github" target="_blank" rel="noopener">Github</a>
-        </li>
         
-        <li class="  menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="https://twitter.com/FechinLi" title="Twitter" target="_blank" rel="noopener">Twitter</a>
-        </li>
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
         
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
     </ul>
-    <p id="copyright">
-        &copy; 2019 John Doe.
-        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
-        Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a>
-        by Fechin
-    </p>
-</div>
+  
 
-<div id="container">
+  
     
-<div id="screen">
-    <div id="mark">
-        <div class="layer" data-depth="0.4">
-            <img src="/img/welcome-cover.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
-        </div>
-    </div>
-    <div id="vibrant">
-        <svg viewbox="0 0 2880 1620" height="100%" preserveaspectratio="xMaxYMax slice">
-            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
-        </svg>
-        <div></div>
-    </div>
-    <div id="header">
-        <div>
-            <a class="image-logo" href="/"></a>
-            <div class="icon-menu switchmenu"></div>
-        </div>
-    </div>
-    
-    <div id="post0">
-        <p>四月 30, 2019</p>
-        <h2><a href="/2019/04/30/hello-world/" title="JsonWebToken(JWT)设计方案" class="posttitle">JsonWebToken(JWT)设计方案</a></h2>
-        <p class="summary">Json web tokens ：官网
-What? - JsonWebToken是什么请求访问后台，后台需要知道你...</p>
-    </div>
-    
-</div>
 
-    <div id="primary">
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/30/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
-    </div>
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/30/hello-world/" class="post-title-link" itemprop="url">JsonWebToken(JWT)设计方案</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-30 14:11:52 / Modified: 16:53:57" itemprop="dateCreated datePublished" datetime="2019-04-30T14:11:52+08:00">2019-04-30</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="Json-web-tokens-：官网"><a href="#Json-web-tokens-：官网" class="headerlink" title="Json web tokens ：官网"></a>Json web tokens ：<a href="https://jwt.io/" target="_blank" rel="noopener">官网</a></h4><hr>
+<h3 id="What-JsonWebToken是什么"><a href="#What-JsonWebToken是什么" class="headerlink" title="What? - JsonWebToken是什么"></a>What? - JsonWebToken是什么</h3><p>请求访问后台，后台需要知道你是谁吧？Token就是一个令牌，每次请求后台都带上它，说明你是谁，并且可以携带一些你的信息。Token是后台根据你配置的算法，还有密钥，编码生成的，最后在通过base64加密返给请求。<br>它长这个样子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</span><br></pre></td></tr></table></figure>
+<p>注意到两个”.”分隔符了嘛，Token分成3部分，上面是base64加密的，解密一下：<br><img src="https://img-blog.csdnimg.cn/20190424095904517.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0F4ZWxhMzBX,size_16,color_FFFFFF,t_70" alt><br>第一部分，说明了用的什么加密算法<br>第二部分，是我们手动放进去的部分信息，譬如放用户id什么的，注意不能放私密信息，因为这部分是可以解密的<br>第三部分，会发现解密不了，因为我们不知道后台用的什么密钥，so，别人是没法伪造token来访问你的(token也有缺陷，后面会提到)</p>
+<hr>
+<h3 id="Why-为什么要用Token"><a href="#Why-为什么要用Token" class="headerlink" title="Why? - 为什么要用Token"></a>Why? - 为什么要用Token</h3><p>都知道session，Token的出现解决了使用session来存储用户身份信息的一些弊端，两个可以根据实际情况觉得用哪种。<br>参考：<a href="https://www.cnblogs.com/xiaozhang2014/p/7750200.html" target="_blank" rel="noopener">Session,Token相关区别</a></p>
+<hr>
+<h3 id="How-用户身份认证完整设计方案"><a href="#How-用户身份认证完整设计方案" class="headerlink" title="How? - 用户身份认证完整设计方案"></a>How? - 用户身份认证完整设计方案</h3><p>Token必须有过期时间，不然登录的时候生成一次，后面的请求拿着一直访问也不合理，泄露了Token的话不安全。<br><em>(本文只节选部分代码，着重说下设计方案，Token的代码实现网上很多)</em><br>先看下Token怎么生成的：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 生成token</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> userId 把userId，versionCode编码到token负载中，同时把刷新token操作的过期时间也编码到负载中</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> token</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">generateToken</span><span class="params">(String userId, Integer versionCode)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//过期时间</span></span><br><span class="line">        Date expire = Date.from(LocalDateTime.now().plusSeconds(jsonWebTokenProperties.getAccessTokenExpireTime()).atZone(ZoneId.systemDefault()).toInstant());</span><br><span class="line">        <span class="comment">//刷新时间</span></span><br><span class="line">        Date refresh = Date.from(LocalDateTime.now().plusSeconds(jsonWebTokenProperties.getRefreshTokenExpireTime()).atZone(ZoneId.systemDefault()).toInstant());</span><br><span class="line">        <span class="keyword">return</span> JWT.create()</span><br><span class="line">                .withClaim(JsonWebTokenConstant.TOKEN_USER_ID_FLAG, userId)</span><br><span class="line">                .withClaim(JsonWebTokenConstant.REFRESH_TOKEN_FLAG, refresh)</span><br><span class="line">                .withClaim(JsonWebTokenConstant.TOKEN_VERSION_ID_FLAG, versionCode)</span><br><span class="line">                .withIssuer(JsonWebTokenConstant.ISSUER)</span><br><span class="line">                .withExpiresAt(expire)</span><br><span class="line">                .sign(algorithm);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>jsonWebTokenProperties和JsonWebTokenConstant是自定义的枚举或properties。<br><strong>方案：<br>1、给Token设计一个过期时间和刷新时间</strong></p>
+<ul>
+<li>过期时间：通过自带的withExpiresAt()方法设置，请求携带token访问，验证token的时候当前时间已经超过了这个过期时间，那么验证就不会通过，会直接报错，这个时候就该提示用户去登录。</li>
+<li>刷新时间：刷新时间只能放在token的荷载里面了，验证token的时候，当前时间已经超过了这个刷新时间，但是又不超过过期时间，这个时候就应该重新生成一个token，这个新token就会有新的过期时间，刷新时间，放在响应头返回给用户，前端拿到新token就替换掉原来的token。这样就可以实现用户的无衔接访问。(这个地方也会有个并发问题，后面会说到)。如果不设计刷新时间，只有过期时间，假如15天过期，这15天内用户都在访问，但是15天过去了，啪，验证不通过，让用户去登录，这样用户体验不好，我们就在用户不知情的情况下刷新了它的Token。假如用户15天都没有访问过，验证不通过，提示去登陆，这个很正常。</li>
+</ul>
+<p><strong>2、Token的荷载</strong><br>可以通过withClaim()方法在token里面放入你需要的信息。我这里放入了刷新时间，userId，还有一个<strong>versionCode</strong>。<br>验证token的时候可以这样拿到你放进去的信息：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DecodedJWT decodedJWT = jwtVerifier.verify(token);</span><br><span class="line">   Map&lt;String, Claim&gt; claimMap = decodedJWT.getClaims();</span><br><span class="line">   Date refresh = claimMap.get(JsonWebTokenConstant.REFRESH_TOKEN_FLAG).asDate();</span><br></pre></td></tr></table></figure></p>
+<p><strong>3、Token的版本-关键点！！！</strong><br>这里设计的版本就是荷载里面的 <strong>versionCode</strong>。<br>这个版本号用来做什么：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">versionCode设计的默认值是：2147500033 </span><br><span class="line">把它转换成二进制看看：1000 00000000000001 00000000000001(32位)</span><br><span class="line">从左往右看，左边的14位：00000000000001 用来存放token版本号，每生成一次token就+1，说明每次刷新token的时候生成token，每次登录的时候生成token这个版本都要+1</span><br><span class="line">再看，中间的14位：00000000000001  用来存放登录版本号，每登录一次才+1</span><br><span class="line">最后剩下高位的4位：1000 暂时冗余出来的</span><br></pre></td></tr></table></figure>
+<p>每次登录的时候很简单，从数据库取该用户的versionCode(数据库存的Integer类型)，先把versionCode转换成二进制，然后截取出登录版本，token版本分别+1，然后再拼接成二进制字符串，再转换成Integer，放在Token荷载，更新数据库。</p>
+<h4 id="每次验证token的时候，如果是需要刷新token的情况，都需要验证版本号，为了防止Token泄露恶意访问"><a href="#每次验证token的时候，如果是需要刷新token的情况，都需要验证版本号，为了防止Token泄露恶意访问" class="headerlink" title="每次验证token的时候，如果是需要刷新token的情况，都需要验证版本号，为了防止Token泄露恶意访问"></a>每次验证token的时候，如果是需要刷新token的情况，都需要验证版本号，为了防止Token泄露恶意访问</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">拿Token携带的versionCode与数据库的versionCode比较</span><br><span class="line">若登录版本不一致，或Token版本不一致，都提示去登录</span><br><span class="line">若两个版本都一致，才继续执行刷新token的逻辑</span><br></pre></td></tr></table></figure>
+<p>这里会有个并发问题，App有时候请求是好几个一起到达的，这些请求都携带的同样的token。有可能第一个请求更新了数据的versionCode，那么之后的请求进来验证的时候就会验证不通过，因为验证token是放在拦截器里面的，几乎所有请求都要走这里，加锁不现实。<br>这里这样解决的：刷新token的时候如果生成了token，redis里面也会缓存30秒这个token，数据库增加了一个最后刷新token时间字段，验证token的时候若在这个30秒内，说明30秒内有请求刷新过token，并且携带了新token返回。直接略过验证。(这里会有点绕，慢慢掰才行)，上部分代码：</p>
+<h5 id="BasedInterceptor-preHandle-节选："><a href="#BasedInterceptor-preHandle-节选：" class="headerlink" title="BasedInterceptor preHandle()节选："></a>BasedInterceptor preHandle()节选：</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">preHandle</span><span class="params">(HttpServletRequest request, HttpServletResponse response, Object handler)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">	<span class="comment">//验证Token</span></span><br><span class="line">    JsonWebTokenVerifyStatus jsonWebTokenVerifyStatus = jsonWebTokenUtils.verification(request);</span><br><span class="line">    <span class="keyword">if</span> (jsonWebTokenVerifyStatus.equals(JsonWebTokenVerifyStatus.LOGIN)) &#123;</span><br><span class="line">        logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,JsonWebTokenVerifyStatus.LOGIN"</span>, headerUserId);</span><br><span class="line">        <span class="comment">//登陆过期或登录异常，需要重新登录!</span></span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BusinessException(BusinessErrorCode.LOGIN_EXPIRE);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (jsonWebTokenVerifyStatus.equals(JsonWebTokenVerifyStatus.LOGIN_OTHER)) &#123;</span><br><span class="line">        logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,JsonWebTokenVerifyStatus.LOGIN_OTHER"</span>, headerUserId);</span><br><span class="line">        <span class="comment">//该账号在别的设备登录！  提示信息</span></span><br><span class="line">        String message = userBaseGrpcService.getLoginRecord(headerUserId, jsonWebTokenUtils.getVersionCodeFromHttpServletRequest(request).toString(), request.getIntHeader(RequestConstans.CLIENT_OS), <span class="number">2</span>).getData().toString();</span><br><span class="line">        <span class="keyword">this</span>.loginOtherMessagePrompt(BusinessErrorCode.LOGIN_OTHER, response, message);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (jsonWebTokenVerifyStatus.equals(JsonWebTokenVerifyStatus.SUCCESS)) &#123;</span><br><span class="line">        <span class="comment">//验证成功放行</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (jsonWebTokenVerifyStatus.equals(JsonWebTokenVerifyStatus.CREATE_NEW)) &#123;</span><br><span class="line">        String userId = CurrentUserSession.getUserId().toString();</span><br><span class="line">        <span class="comment">//需要刷新token</span></span><br><span class="line">        String existToken = jedisCommands.get(userId + JsonWebTokenConstant.REDIS_TOKEN_SUFFIX);</span><br><span class="line">        <span class="keyword">if</span> (!StringUtils.isEmpty(existToken)) &#123;</span><br><span class="line">            logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,JsonWebTokenVerifyStatus.CREATE_NEW"</span>, headerUserId);</span><br><span class="line">            <span class="comment">//如果redis已存在最近刚刚刷新生成的token</span></span><br><span class="line">            response.setHeader(JsonWebTokenConstant.RESPONSE_HEADER_USER_TOKEN_FLAG, existToken);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//需要重新生成token 继续请求数据  把新token放在header</span></span><br><span class="line">            logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,JsonWebTokenVerifyStatus.CREATE_NEW,refreshGenerateTokenByRequestCode()"</span>, headerUserId);</span><br><span class="line">            String allNewToken = jsonWebTokenUtils.refreshGenerateTokenByRequestCode(userId, request);</span><br><span class="line">            <span class="keyword">if</span> (StringUtils.isNotEmpty(allNewToken)) &#123;</span><br><span class="line">                response.setHeader(JsonWebTokenConstant.RESPONSE_HEADER_USER_TOKEN_FLAG, allNewToken);</span><br><span class="line">                jedisCommands.setex(userId + JsonWebTokenConstant.REDIS_TOKEN_SUFFIX, JsonWebTokenConstant.REDIS_TOKEN_EXPIRE, allNewToken);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>下面是jsonWebTokenUtils.verification(request).getCode()方法</p>
+<h4 id="JsonWebTokenUtils节选"><a href="#JsonWebTokenUtils节选" class="headerlink" title="JsonWebTokenUtils节选"></a>JsonWebTokenUtils节选</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 验证token，返回状态</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> request request</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> JsonWebTokenVerifyStatus</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> JsonWebTokenVerifyStatus <span class="title">verification</span><span class="params">(HttpServletRequest request)</span> </span>&#123;</span><br><span class="line">    String token = <span class="keyword">this</span>.getToken(request);</span><br><span class="line">    <span class="keyword">if</span> (StringUtils.isEmpty(token)) &#123;</span><br><span class="line">        logger.info(<span class="string">"Token is empty！To login！"</span>);</span><br><span class="line">        <span class="keyword">return</span> JsonWebTokenVerifyStatus.LOGIN;</span><br><span class="line">    &#125;</span><br><span class="line">    logger.debug(<span class="string">"uid:&#123;&#125;,token:&#123;&#125;"</span>, request.getHeader(RequestConstans.USER_ID), token);</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        DecodedJWT decodedJWT = jwtVerifier.verify(token);</span><br><span class="line">        Map&lt;String, Claim&gt; claimMap = decodedJWT.getClaims();</span><br><span class="line">        Date refresh = claimMap.get(JsonWebTokenConstant.REFRESH_TOKEN_FLAG).asDate();</span><br><span class="line">        String userId = claimMap.get(JsonWebTokenConstant.TOKEN_USER_ID_FLAG).asString();</span><br><span class="line">        <span class="comment">//保存当前userId</span></span><br><span class="line">        CurrentUserSession.setUserId(Long.valueOf(userId));</span><br><span class="line">        <span class="keyword">if</span> (!userId.equals(request.getHeader(RequestConstans.USER_ID))) &#123;</span><br><span class="line">            <span class="comment">//验证token中的uid是否与header中的uid一致</span></span><br><span class="line">            logger.error(<span class="string">"header in uid and user_token in uid differ error &#123;&#125; "</span>, userId);</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> BusinessException(BusinessErrorCode.VOICE_CALL_PARAM_ERROR);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (refresh.getTime() &lt; System.currentTimeMillis()) &#123;</span><br><span class="line">            <span class="comment">//刷新 token</span></span><br><span class="line">            Integer versionCode = claimMap.get(JsonWebTokenConstant.TOKEN_VERSION_ID_FLAG).asInt();</span><br><span class="line">            <span class="keyword">if</span> (versionCode == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="comment">//兼容老token</span></span><br><span class="line">                <span class="keyword">return</span> JsonWebTokenVerifyStatus.CREATE_NEW;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//验证token中的版本号是否与数据库中的是否一致，不一致的话转登录</span></span><br><span class="line">            LoginTokenVersionCompareEnum result = <span class="keyword">this</span>.checkVersion(versionCode, request, Long.valueOf(userId));</span><br><span class="line">             <span class="keyword">if</span> (result.equals(LoginTokenVersionCompareEnum.TOKEN_DIFFERENCE)) &#123;</span><br><span class="line">                <span class="comment">//tokenVersion版本不一致，提示去登录</span></span><br><span class="line">                <span class="keyword">return</span> JsonWebTokenVerifyStatus.LOGIN;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (result.equals(LoginTokenVersionCompareEnum.IN_CONSISTENT)) &#123;</span><br><span class="line">                <span class="comment">//loginVersion和tokenVersion不一致，在别处登录过</span></span><br><span class="line">                <span class="keyword">return</span> JsonWebTokenVerifyStatus.LOGIN_OTHER;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (result.equals(LoginTokenVersionCompareEnum.LATEST_REFRESH)) &#123;</span><br><span class="line">                <span class="comment">//近期(30秒内)刷新过token，</span></span><br><span class="line">                <span class="keyword">return</span> JsonWebTokenVerifyStatus.SUCCESS;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">//loginVersion和tokenVersion都一致，刷新token</span></span><br><span class="line">                logger.info(JsonWebTokenVerifyStatus.CREATE_NEW.getMessage());</span><br><span class="line">                <span class="keyword">return</span> JsonWebTokenVerifyStatus.CREATE_NEW;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> JsonWebTokenVerifyStatus.SUCCESS;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (BusinessException b) &#123;</span><br><span class="line">        <span class="keyword">throw</span> b;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (JWTVerificationException JWTVerificationException) &#123;</span><br><span class="line">   		<span class="comment">//token验证失败，token过期或者是假token</span></span><br><span class="line">        logger.info(JsonWebTokenVerifyStatus.LOGIN.getMessage());</span><br><span class="line">        <span class="keyword">return</span> JsonWebTokenVerifyStatus.LOGIN;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>下面是this.checkVersion(versionCode, request, Long.valueOf(userId)).getCode();方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 校验版本号</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> requestVersionCode 请求token里携带的版本号</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> request            request</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> userId             userId</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> Boolean</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> LoginTokenVersionCompareEnum <span class="title">checkVersion</span><span class="params">(Integer requestVersionCode, HttpServletRequest request, Long userId)</span> </span>&#123;</span><br><span class="line">    SimpleDateFormat simpleDateFormat = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd  HH:mm:ss"</span>);</span><br><span class="line">    <span class="keyword">int</span> loginAndTokenLength = jsonWebTokenProperties.getLoginTokenVersionCodeTokenLength();</span><br><span class="line">    ImUserBase imUserBase = imUserBaseMapper.selectByPrimaryKey(userId);</span><br><span class="line">    PlatformEnum platformEnum = <span class="keyword">this</span>.getPlatformFromRequest(request);</span><br><span class="line">    Date date;</span><br><span class="line">    Integer dbVersionCode;</span><br><span class="line">    <span class="keyword">if</span> (platformEnum.equals(PlatformEnum.ANDROID) || platformEnum.equals(PlatformEnum.IOS)) &#123;</span><br><span class="line">        dbVersionCode = imUserBase.getAppTokenVersion();</span><br><span class="line">        date = imUserBase.getAppTokenRefreshTime();</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        dbVersionCode = imUserBase.getWebTokenVersion();</span><br><span class="line">        date = imUserBase.getWebTokenRefreshTime();</span><br><span class="line">    &#125;</span><br><span class="line">    String requestVersionCodeBinary = BitUtils.decimalToBinary(requestVersionCode);</span><br><span class="line">    String dbVersionCodeBinary = BitUtils.decimalToBinary(dbVersionCode);</span><br><span class="line">    Boolean tokenCompareResult = requestVersionCodeBinary.substring(requestVersionCodeBinary.length() - loginAndTokenLength)</span><br><span class="line">            .equals(dbVersionCodeBinary.substring(dbVersionCodeBinary.length() - loginAndTokenLength));</span><br><span class="line">    Boolean loginCompareResult = requestVersionCodeBinary.substring(requestVersionCodeBinary.length() - <span class="number">2</span> * loginAndTokenLength, requestVersionCodeBinary.length() - loginAndTokenLength)</span><br><span class="line">            .equals(dbVersionCodeBinary.substring(dbVersionCodeBinary.length() - <span class="number">2</span> * loginAndTokenLength, dbVersionCodeBinary.length() - loginAndTokenLength));</span><br><span class="line">    <span class="comment">//token版本仅相差1的情况  说明近期有请求刷新过token</span></span><br><span class="line">    Integer addResultCode = <span class="keyword">this</span>.increaseVersion(requestVersionCode, JsonWebTokenConstant.TOKEN_VERSION_TAG);</span><br><span class="line">    logger.debug(<span class="string">"requestVersionCode:&#123;&#125;,addResultCode:&#123;&#125;,dbVersionCode:&#123;&#125;"</span>, requestVersionCode, addResultCode, dbVersionCode);</span><br><span class="line">    <span class="keyword">boolean</span> tokenVersionDifferOne = addResultCode.equals(dbVersionCode);</span><br><span class="line">    Long intervalTime = System.currentTimeMillis() - date.getTime();</span><br><span class="line">    logger.debug(<span class="string">"loginCompareResult:&#123;&#125;,tokenCompareResult:&#123;&#125;,tokenVersionDifferOne:&#123;&#125;,intervalTime:&#123;&#125;,latestRefresh:&#123;&#125;,SystemTime:&#123;&#125;,dbTime:&#123;&#125;"</span>,</span><br><span class="line">            loginCompareResult, tokenCompareResult, tokenVersionDifferOne, intervalTime, intervalTime &lt;= JsonWebTokenConstant.LATEST_REFRESH_TIME, simpleDateFormat.format(<span class="keyword">new</span> Date()), simpleDateFormat.format(date));</span><br><span class="line">    <span class="keyword">if</span> (loginCompareResult &amp;&amp; tokenCompareResult) &#123;</span><br><span class="line">        logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,LoginTokenVersionCompareEnum.CONSISTENT"</span>, userId);</span><br><span class="line">        <span class="comment">//都一致</span></span><br><span class="line">        <span class="keyword">return</span> LoginTokenVersionCompareEnum.CONSISTENT;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (loginCompareResult &amp;&amp; tokenVersionDifferOne &amp;&amp; intervalTime &lt;= JsonWebTokenConstant.LATEST_REFRESH_TIME) &#123;</span><br><span class="line">        logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,LoginTokenVersionCompareEnum.LATEST_REFRESH"</span>, userId);</span><br><span class="line">        <span class="comment">//版本相差1且同时期有请求刷新过token  30秒内</span></span><br><span class="line">        <span class="keyword">return</span> LoginTokenVersionCompareEnum.LATEST_REFRESH;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (loginCompareResult) &#123;</span><br><span class="line">        logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,LoginTokenVersionCompareEnum.TOKEN_DIFFERENCE"</span>, userId);</span><br><span class="line">        <span class="comment">//login版本一致，token版本不一致，提示去登录</span></span><br><span class="line">        <span class="keyword">return</span> LoginTokenVersionCompareEnum.TOKEN_DIFFERENCE;</span><br><span class="line">    &#125;</span><br><span class="line">    logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,LoginTokenVersionCompareEnum.IN_CONSISTENT"</span>, userId);</span><br><span class="line">    <span class="comment">//都不一致，说明该账号在其他设备登录过，提示去登录</span></span><br><span class="line">    <span class="keyword">return</span> LoginTokenVersionCompareEnum.IN_CONSISTENT;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>只节选了部分代码，设计方案仅供参考，不同业务场景设计不一样。</p>
+<hr>
+<p><img src="https://img-blog.csdnimg.cn/20190424112857959.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0F4ZWxhMzBX,size_16,color_FFFFFF,t_70" alt></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/MistraR" title="GitHub &rarr; https://github.com/MistraR" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:wrmistra@gmail.com" title="E-Mail &rarr; mailto:wrmistra@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+
+  
 </div>
-<div id="preview"></div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.1</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.1"></script>
+
+  <script src="/js/motion.js?v=7.1.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.1.1"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
-<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/js/plugin.js"></script>
-<script src="/js/diaspora.js"></script>
-<link rel="stylesheet" href="/photoswipe/photoswipe.css">
-<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
-<script src="/photoswipe/photoswipe.min.js"></script>
-<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
 </html>
