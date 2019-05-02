@@ -154,7 +154,7 @@ template {
 body {
   position: relative;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -166,7 +166,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 h1,
@@ -1104,10 +1104,11 @@ pre .javascript .function {
   }
 }
 .brand {
+  font-size: 20px;
   position: relative;
   display: inline-block;
-  padding: 0 40px;
-  color: #fff;
+  padding: 0 20px;
+  color: #e33139 !important;
   background: #222;
   border-bottom: none;
 }
@@ -1117,21 +1118,21 @@ pre .javascript .function {
 .logo {
   display: inline-block;
   margin-right: 5px;
-  line-height: 36px;
+  line-height: 26px;
   vertical-align: top;
 }
 .site-title {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
   font-size: 13px;
-  color: #999;
+  color: #e33139 !important;
 }
 .use-motion .brand {
   opacity: 0;
@@ -1198,13 +1199,14 @@ pre .javascript .function {
 .menu .menu-item a,
 .menu .menu-item span.exturl {
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   line-height: inherit;
   border-bottom: 1px solid transparent;
   transition-property: border-color;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+  color: #e33139 !important;
 }
 .menu .menu-item a:hover,
 .menu .menu-item span.exturl:hover {
@@ -1298,7 +1300,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1834,7 +1836,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #609fff;
+  background: #ffd6ff;
 }
 .feed-link,
 .chat {
@@ -2013,7 +2015,7 @@ pre .javascript .function {
 }
 .footer {
   font-size: 14px;
-  color: #999;
+  color: #e33139 !important;
 }
 .footer img {
   border: none;
@@ -2024,7 +2026,8 @@ pre .javascript .function {
 .with-love {
   display: inline-block;
   margin: 0 5px;
-  color: #808080;
+  color: #e33139 !important;
+  font-size: 18px;
 }
 .powered-by,
 .theme-info {
@@ -2402,7 +2405,7 @@ ul.breadcrumb {
   margin: 1em 0;
   padding: 0 2em;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 ul.breadcrumb li {
   display: inline;
@@ -2445,7 +2448,7 @@ embed {
 .custom-logo .site-title {
   margin: 10px auto 0;
   font-size: 24px;
-  color: #222;
+  color: #e33139 !important;
 }
 .custom-logo .site-title a {
   border: none;
@@ -2544,15 +2547,15 @@ embed {
   display: inline-block;
 }
 body {
-  background: url("https://markdown-mistra.oss-cn-shenzhen.aliyuncs.com/wallhaven-709451.jpg");
+  background: url("https://markdown-mistra.oss-cn-shenzhen.aliyuncs.com/wallhaven-702264.jpg");
   background-attachment: fixed;
   background-repeat: repeat;
   background-position: right center;
   background-size: 100%;
 }
 .post {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 10px;
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
