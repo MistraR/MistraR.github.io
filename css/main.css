@@ -1834,7 +1834,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff106;
+  background: #609fff;
 }
 .feed-link,
 .chat {
@@ -2544,7 +2544,7 @@ embed {
   display: inline-block;
 }
 body {
-  background: url("https://markdown-mistra.oss-cn-shenzhen.aliyuncs.com/wallhaven-672626.jpg");
+  background: url("https://markdown-mistra.oss-cn-shenzhen.aliyuncs.com/wallhaven-709451.jpg");
   background-attachment: fixed;
   background-repeat: repeat;
   background-position: right center;
