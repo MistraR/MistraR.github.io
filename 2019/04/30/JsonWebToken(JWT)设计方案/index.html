@@ -120,7 +120,7 @@
 <meta property="og:description" content="Json web tokens ：官网 What? - JsonWebToken是什么请求访问后台，后台需要知道你是谁吧？Token就是一个令牌，每次请求后台都带上它，说明你是谁，并且可以携带一些你的信息。Token是后台根据你配置的算法，还有密钥，编码生成的，最后在通过base64加密返给请求。它长这个样子： 1eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzd">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190424095904517.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0F4ZWxhMzBX,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-05-05T02:41:23.552Z">
+<meta property="og:updated_time" content="2019-05-05T03:50:48.459Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JsonWebToken(JWT)设计方案">
 <meta name="twitter:description" content="Json web tokens ：官网 What? - JsonWebToken是什么请求访问后台，后台需要知道你是谁吧？Token就是一个令牌，每次请求后台都带上它，说明你是谁，并且可以携带一些你的信息。Token是后台根据你配置的算法，还有密钥，编码生成的，最后在通过base64加密返给请求。它长这个样子： 1eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzd">
@@ -433,7 +433,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-05 10:41:23" itemprop="dateModified" datetime="2019-05-05T10:41:23+08:00">2019-05-05</time>
+                <time title="修改时间：2019-05-05 11:50:48" itemprop="dateModified" datetime="2019-05-05T11:50:48+08:00">2019-05-05</time>
               
             
           </span>
@@ -524,6 +524,9 @@
 <p>下面是this.checkVersion(versionCode, request, Long.valueOf(userId)).getCode();方法</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 校验版本号</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> requestVersionCode 请求token里携带的版本号</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> request            request</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> userId             userId</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> Boolean</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> LoginTokenVersionCompareEnum <span class="title">checkVersion</span><span class="params">(Integer requestVersionCode, HttpServletRequest request, Long userId)</span> </span>&#123;</span><br><span class="line">    SimpleDateFormat simpleDateFormat = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd  HH:mm:ss"</span>);</span><br><span class="line">    <span class="keyword">int</span> loginAndTokenLength = jsonWebTokenProperties.getLoginTokenVersionCodeTokenLength();</span><br><span class="line">    ImUserBase imUserBase = imUserBaseMapper.selectByPrimaryKey(userId);</span><br><span class="line">    PlatformEnum platformEnum = <span class="keyword">this</span>.getPlatformFromRequest(request);</span><br><span class="line">    Date date;</span><br><span class="line">    Integer dbVersionCode;</span><br><span class="line">    <span class="keyword">if</span> (platformEnum.equals(PlatformEnum.ANDROID) || platformEnum.equals(PlatformEnum.IOS)) &#123;</span><br><span class="line">        dbVersionCode = imUserBase.getAppTokenVersion();</span><br><span class="line">        date = imUserBase.getAppTokenRefreshTime();</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        dbVersionCode = imUserBase.getWebTokenVersion();</span><br><span class="line">        date = imUserBase.getWebTokenRefreshTime();</span><br><span class="line">    &#125;</span><br><span class="line">    String requestVersionCodeBinary = BitUtils.decimalToBinary(requestVersionCode);</span><br><span class="line">    String dbVersionCodeBinary = BitUtils.decimalToBinary(dbVersionCode);</span><br><span class="line">    Boolean tokenCompareResult = requestVersionCodeBinary.substring(requestVersionCodeBinary.length() - loginAndTokenLength)</span><br><span class="line">            .equals(dbVersionCodeBinary.substring(dbVersionCodeBinary.length() - loginAndTokenLength));</span><br><span class="line">    Boolean loginCompareResult = requestVersionCodeBinary.substring(requestVersionCodeBinary.length() - <span class="number">2</span> * loginAndTokenLength, requestVersionCodeBinary.length() - loginAndTokenLength)</span><br><span class="line">            .equals(dbVersionCodeBinary.substring(dbVersionCodeBinary.length() - <span class="number">2</span> * loginAndTokenLength, dbVersionCodeBinary.length() - loginAndTokenLength));</span><br><span class="line">    <span class="comment">//token版本仅相差1的情况  说明近期有请求刷新过token</span></span><br><span class="line">    Integer addResultCode = <span class="keyword">this</span>.increaseVersion(requestVersionCode, JsonWebTokenConstant.TOKEN_VERSION_TAG);</span><br><span class="line">    logger.debug(<span class="string">"requestVersionCode:&#123;&#125;,addResultCode:&#123;&#125;,dbVersionCode:&#123;&#125;"</span>, requestVersionCode, addResultCode, dbVersionCode);</span><br><span class="line">    <span class="keyword">boolean</span> tokenVersionDifferOne = addResultCode.equals(dbVersionCode);</span><br><span class="line">    Long intervalTime = System.currentTimeMillis() - date.getTime();</span><br><span class="line">    logger.debug(<span class="string">"loginCompareResult:&#123;&#125;,tokenCompareResult:&#123;&#125;,tokenVersionDifferOne:&#123;&#125;,intervalTime:&#123;&#125;,latestRefresh:&#123;&#125;,SystemTime:&#123;&#125;,dbTime:&#123;&#125;"</span>,</span><br><span class="line">            loginCompareResult, tokenCompareResult, tokenVersionDifferOne, intervalTime, intervalTime &lt;= JsonWebTokenConstant.LATEST_REFRESH_TIME, simpleDateFormat.format(<span class="keyword">new</span> Date()), simpleDateFormat.format(date));</span><br><span class="line">    <span class="keyword">if</span> (loginCompareResult &amp;&amp; tokenCompareResult) &#123;</span><br><span class="line">        logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,LoginTokenVersionCompareEnum.CONSISTENT"</span>, userId);</span><br><span class="line">        <span class="comment">//都一致</span></span><br><span class="line">        <span class="keyword">return</span> LoginTokenVersionCompareEnum.CONSISTENT;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (loginCompareResult &amp;&amp; tokenVersionDifferOne &amp;&amp; intervalTime &lt;= JsonWebTokenConstant.LATEST_REFRESH_TIME) &#123;</span><br><span class="line">        logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,LoginTokenVersionCompareEnum.LATEST_REFRESH"</span>, userId);</span><br><span class="line">        <span class="comment">//版本相差1且同时期有请求刷新过token  30秒内</span></span><br><span class="line">        <span class="keyword">return</span> LoginTokenVersionCompareEnum.LATEST_REFRESH;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (loginCompareResult) &#123;</span><br><span class="line">        logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,LoginTokenVersionCompareEnum.TOKEN_DIFFERENCE"</span>, userId);</span><br><span class="line">        <span class="comment">//login版本一致，token版本不一致，提示去登录</span></span><br><span class="line">        <span class="keyword">return</span> LoginTokenVersionCompareEnum.TOKEN_DIFFERENCE;</span><br><span class="line">    &#125;</span><br><span class="line">    logger.debug(<span class="string">"uid:&#123;&#125;--------------------------------------------,LoginTokenVersionCompareEnum.IN_CONSISTENT"</span>, userId);</span><br><span class="line">    <span class="comment">//都不一致，说明该账号在其他设备登录过，提示去登录</span></span><br><span class="line">    <span class="keyword">return</span> LoginTokenVersionCompareEnum.IN_CONSISTENT;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>只节选了部分代码，设计方案仅供参考，不同业务场景设计不一样。</p>
+<h4 id="相关文档"><a href="#相关文档" class="headerlink" title="相关文档:"></a>相关文档:</h4><ul>
+<li><a href="https://my.oschina.net/u/3667353/blog/1608976" target="_blank" rel="noopener">使用JWT和Spring Security保护REST API</a></li>
+</ul>
 <hr>
 <p>我的:</p>
 <ul>
@@ -553,7 +556,7 @@
   <p><span>本文标题:</span><a href="/2019/04/30/JsonWebToken(JWT)设计方案/">JsonWebToken(JWT)设计方案</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 王瑞 的个人博客">王瑞</a></p>
   <p><span>发布时间:</span>2019年04月30日 - 09:04</p>
-  <p><span>最后更新:</span>2019年05月05日 - 10:05</p>
+  <p><span>最后更新:</span>2019年05月05日 - 11:05</p>
   <p><span>原始链接:</span><a href="/2019/04/30/JsonWebToken(JWT)设计方案/" title="JsonWebToken(JWT)设计方案">http://mistra.wang/2019/04/30/JsonWebToken(JWT)设计方案/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://mistra.wang/2019/04/30/JsonWebToken(JWT)设计方案/" aria-label="复制成功！"></i></span>
   </p>
@@ -686,7 +689,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -711,7 +714,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -738,7 +745,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -820,7 +833,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Json-web-tokens-：官网"><span class="nav-number">1.</span> <span class="nav-text">Json web tokens ：官网</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#What-JsonWebToken是什么"><span class="nav-number"></span> <span class="nav-text">What? - JsonWebToken是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-为什么要用Token"><span class="nav-number"></span> <span class="nav-text">Why? - 为什么要用Token</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-用户身份认证完整设计方案"><span class="nav-number"></span> <span class="nav-text">How? - 用户身份认证完整设计方案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#每次验证token的时候，如果是需要刷新token的情况，都需要验证版本号，为了防止Token泄露恶意访问"><span class="nav-number">1.</span> <span class="nav-text">每次验证token的时候，如果是需要刷新token的情况，都需要验证版本号，为了防止Token泄露恶意访问</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#BasedInterceptor-preHandle-节选："><span class="nav-number">1.1.</span> <span class="nav-text">BasedInterceptor preHandle()节选：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JsonWebTokenUtils节选"><span class="nav-number">2.</span> <span class="nav-text">JsonWebTokenUtils节选</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Json-web-tokens-：官网"><span class="nav-number">1.</span> <span class="nav-text">Json web tokens ：官网</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#What-JsonWebToken是什么"><span class="nav-number"></span> <span class="nav-text">What? - JsonWebToken是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-为什么要用Token"><span class="nav-number"></span> <span class="nav-text">Why? - 为什么要用Token</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-用户身份认证完整设计方案"><span class="nav-number"></span> <span class="nav-text">How? - 用户身份认证完整设计方案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#每次验证token的时候，如果是需要刷新token的情况，都需要验证版本号，为了防止Token泄露恶意访问"><span class="nav-number">1.</span> <span class="nav-text">每次验证token的时候，如果是需要刷新token的情况，都需要验证版本号，为了防止Token泄露恶意访问</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#BasedInterceptor-preHandle-节选："><span class="nav-number">1.1.</span> <span class="nav-text">BasedInterceptor preHandle()节选：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JsonWebTokenUtils节选"><span class="nav-number">2.</span> <span class="nav-text">JsonWebTokenUtils节选</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相关文档"><span class="nav-number">3.</span> <span class="nav-text">相关文档:</span></a></li></ol></li></div>
             
 
           </div>
@@ -869,7 +882,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共6.9k字</span>
+  <span class="post-count">博客全站共7.4k字</span>
 </div>
 
 
