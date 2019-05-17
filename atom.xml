@@ -6,44 +6,15 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mistra.wang/"/>
-  <updated>2019-05-05T07:10:48.455Z</updated>
+  <updated>2019-05-05T06:34:24.035Z</updated>
   <id>http://mistra.wang/</id>
   
   <author>
-    <name>王瑞</name>
+    <name>Mistra</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Session,Cookie,Token</title>
-    <link href="http://mistra.wang/2019/05/05/Session-Cookie-Token/"/>
-    <id>http://mistra.wang/2019/05/05/Session-Cookie-Token/</id>
-    <published>2019-05-05T04:12:51.000Z</published>
-    <updated>2019-05-05T07:10:48.455Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h3><p>由于HTTP协议是无状态的协议，大多数情况下服务端都需要知道请求是哪个用户，Session简单说就是用来标识用户请求的，拿着SessionId去访问，告诉服务器我是谁。Session是存放在服务端的，客户端有的只是SessionId。</p><ul><li>sessionid是一个会话的key，浏览器第一次访问服务器会在服务器端生成一个session，有一个sessionid和它对应。tomcat生成的sessionid叫做jsessionid</li><li>session在访问tomcat服务器HttpServletRequest的getSession(true)的时候创建，tomcat的ManagerBase类提供创建sessionid的方法：随机数+时间+jvmid</li><li>tomcat的StandardManager类将session存储在<strong>内存</strong>中，也可以持久化到file，数据库，memcache，redis等</li><li>客户端只保存sessionid到cookie中，而不会保存session</li><li>session销毁：超时;程序调用HttpSession.invalidate();程序关闭关掉浏览器并不会关闭session。</li></ul><h3 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h3><p>Cookie是客户端(浏览器)保存用户信息的一种机制，用来记录用户的一些信息(用户名密码,记住用户名密码就是这样实现的)，每次HTTP请求的时候，客户端都会发送相应的Cookie信息到服务端。SessionId就放在Cookie里面。</p><h3 id="Token"><a href="#Token" class="headerlink" title="Token"></a>Token</h3><p>令牌，一般是说JWT(JsonWebTokens).用Session的话服务端要保存每个用户的Session，<strong>耗费空间</strong>。令牌就更适用一些业务场景了。每个用户带上自己的令牌访问，客户端校验令牌，就知道该请求时候合法，用户是谁了。但是更<strong>耗费时间</strong>。<br>参考我的博客：<a href="http://mistra.wang/2019/04/30/JsonWebToken(JWT">JsonWebToken(JWT)设计方案</a>%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/)</p><h4 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章:"></a>相关文章:</h4><ul><li><a href="https://mp.weixin.qq.com/s/1KCSn44soShupcwdIjL1Rw" target="_blank" rel="noopener">彻底理解cookie，session，token</a></li><li><a href="https://www.zhihu.com/question/19786827" target="_blank" rel="noopener">COOKIE和SESSION有什么区别？</a></li></ul><hr><p>我的:</p><ul><li>🍀 🍀 🍀&gt;&gt;&gt;&gt;&gt;&gt;&gt;<a href="https://blog.csdn.net/axela30w" target="_blank" rel="noopener">CSDN</a>&lt;&lt;&lt;&lt;&lt;&lt;&lt;🍀 🍀 🍀</li><li>🍀 🍀 🍀&gt;&gt;&gt;&gt;&gt;&gt;&gt;<a href="https://github.com/MistraR" target="_blank" rel="noopener">GitHub</a>&lt;&lt;&lt;&lt;&lt;&lt;&lt;🍀 🍀 🍀</li><li>🍀 🍀 🍀&gt;&gt;&gt;&gt;&gt;&gt;&gt;<a href="http://mistra.wang/">个人博客</a>&lt;&lt;&lt;&lt;&lt;&lt;&lt;🍀 🍀 🍀</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;Session&quot;&gt;&lt;a href=&quot;#Session&quot; class=&quot;headerlink&quot; title=&quot;Session&quot;&gt;&lt;/a&gt;Session&lt;/h3&gt;&lt;p&gt;由于HTTP协议是无状态的协议，大多数情况下服务端都需要知道请求是哪个用户，Session简单说就是
-      
-    
-    </summary>
-    
-      <category term="Http" scheme="http://mistra.wang/categories/Http/"/>
-    
-    
-      <category term="Session" scheme="http://mistra.wang/tags/Session/"/>
-    
-      <category term="Cookie" scheme="http://mistra.wang/tags/Cookie/"/>
-    
-      <category term="Token" scheme="http://mistra.wang/tags/Token/"/>
-    
-  </entry>
   
   <entry>
     <title>同步、异步、阻塞、非阻塞</title>
